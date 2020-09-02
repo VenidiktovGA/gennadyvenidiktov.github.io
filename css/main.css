@@ -1,0 +1,39 @@
+html {
+    line-height: 1.5;
+}
+
+.header-site {
+    background-color: #110602;
+    background-image: url("../img/headerbg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+.header-title {
+    margin-top: -15vmin;
+    margin-bottom: 5vmin;
+    font-size: 10vmin;
+}
+
+.header-tecnologis {
+    padding-left: 0;
+    list-style: none;
+    font-size: 5vmin;
+}
+
+.icon {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 10vh;
+    margin-left: -5vh;
+    font-size: 15vmin;
+}
