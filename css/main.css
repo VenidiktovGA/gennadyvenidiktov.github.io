@@ -2,38 +2,74 @@ html {
     line-height: 1.5;
 }
 
+.container {
+    display: grid;
+    grid-template-rows: 100vh 75vh 25vh;
+}
+
+
+/*HEADER**************************************************************/
+
 .header-site {
     background-color: #110602;
     background-image: url("../img/headerbg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
     text-align: center;
     color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-rows: repeat(4, 25vh);
     justify-items: center;
+    align-items: center;
 }
 
-.header-title {
-    margin-top: -15vmin;
-    margin-bottom: 5vmin;
-    font-size: 10vmin;
+.header-title,
+.content-title,
+.header-tecnologis {
+    font-size: calc(55px + (45 + 45 * 0.7) * ((100vw - 320px) / 1024));
+}
+
+.header-slogon {
+    font-size: calc(30px + (40 + 40 * 0.7) * ((100vw - 320px) / 1024));
 }
 
 .header-tecnologis {
     padding-left: 0;
     list-style: none;
     font-size: 5vmin;
+    align-self: end;
+    font-size: calc(30px + 40 * (100vw / 1024));
 }
 
 .icon {
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 10vh;
-    margin-left: -5vh;
     font-size: 15vmin;
+    align-self: start;
+}
+
+
+/*/HEADER**************************************************************/
+
+.content-site {
+    display: grid;
+    font-size: 5vh;
+    align-items: center;
+    justify-items: center;
+}
+
+.content-site {
+    background-color: red;
+}
+
+.footer-site {
+    display: grid;
+    grid-template-columns: 33vw 33vw auto;
+    background-color: #061634;
+    color: #6479a2;
+    justify-items: center;
+    align-items: center;
+}
+
+.socialnetwork {
+    text-align: center;
 }
