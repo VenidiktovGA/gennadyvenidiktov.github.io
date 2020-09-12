@@ -14,7 +14,13 @@
     <div class="container">
         <!--HEADER**************************************************************-->
         <header class="header-site">
-            <h1 class="header-title">Венидиктов Геннадий</h1>
+				<h1 class="header-title">Венидиктов Геннадий</h1>
+				<svg width="200" height="200">
+					<pattern width="100%" height="100%" id="avatar">
+						<image  xlink:href="img/content/ImLogo.png" width="200" height="200" preserveAspectRatio="xMidYMid slice" style="transform:translate(-0%,0);"></image>
+					</pattern>
+					<circle  cx="50%" cy="50%" r="100" fill="url(#avatar)"></circle>
+				</svg>
             <h2 class="header-slogon">Только Вперед</h2>
             <ul class="header-tecnologis">
                 <li>HTML</li>
@@ -23,25 +29,35 @@
             </ul>
             <div class="icon"><i class="fas fa-angle-down"></i></div>
         </header>
-        <!--/HEADER**************************************************************-->
+		  <!--/HEADER**************************************************************-->
+		  
+		  <!--CONTENT**************************************************************-->
         <main class="content-site">
             <h1 class="content-title">Портфолио</h1>
             <p>Здесь могли быть ваши работы</p>
-        </main>
+		  </main>
+		  <!--/CONTENT**************************************************************-->
+
+		  <!--FOOTER****************************************************************-->
         <footer class="footer-site">
             <div>
-                <h3>Венидиктов Геннадий</h3>
+					 <h3>Венидиктов Геннадий</h3>
+					 <h4>Frontend, html верстка сайтов</h4>
             </div>
             <div>
                 <h3>Я в социальных сетях:</h3>
                 <div class="socialnetwork">
-                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#" class="socialnetwork_item1"><i class="fab fa-vk"></i></a>
                     <a href="#"><i class="fab fa-whatsapp"></i></a>
                     <a href="#"><i class="fab fa-viber"></i></a>
                 </div>
             </div>
-            <div><a href="#" class="button">Связатся Вконтакте</a></div>
-        </footer>
+				<div>
+					<h3 class="vkcontact">Связатся</h3>
+					<h3><a href="#" class="button">Связатся Вконтакте</a></h3>
+				</div>
+		  </footer>
+		  <!--/FOOTER****************************************************************-->
     </div>
 </body>
 

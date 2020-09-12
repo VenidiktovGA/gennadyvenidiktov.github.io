@@ -1,75 +1,116 @@
 html {
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
 .container {
-    display: grid;
-    grid-template-rows: 100vh 75vh 25vh;
+  display: grid;
+  grid-template-rows: 100vh 75vh 25vh;
 }
-
 
 /*HEADER**************************************************************/
 
 .header-site {
-    background-color: #110602;
-    background-image: url("../img/headerbg.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    color: black;
-    display: grid;
-    grid-template-rows: repeat(4, 25vh);
-    justify-items: center;
-    align-items: center;
+  background-color: #110602;
+  background-image: url("../img/decoration/headerbg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  color: black;
+  display: grid;
+  grid-template-rows: repeat(4, 25vh);
+  justify-items: center;
+  align-items: center;
 }
 
 .header-title,
 .content-title,
 .header-tecnologis {
-    font-size: calc(55px + (45 + (45 * 0.7)) * ((100vw - 320px) / 1024));
+  font-size: calc(45px + (35 * 0.7) * ((100vw - 320px) / 1024));
 }
 
 .header-slogon {
-    font-size: calc(30px + (40 + (40 * 0.7)) * ((100vw - 320px) / 1024));
+  font-size: calc(20px + (30 * 0.7) * ((100vw - 320px) / 1024));
 }
 
 .header-tecnologis {
-    padding-left: 0;
-    list-style: none;
-    font-size: 5vmin;
-    align-self: end;
-    font-size: calc(30px + (40 + (40 * 0.7)) * ((100vw - 320px) / 1024));
+  padding-left: 0;
+  list-style: none;
+  font-size: 5vmin;
+  align-self: end;
+  font-size: calc(20px + (30 * 0.7) * ((100vw - 320px) / 1024));
 }
 
 .icon {
-    font-size: 15vmin;
-    align-self: start;
+  font-size: 15vmin;
+  align-self: start;
 }
-
-
 /*/HEADER**************************************************************/
 
+/*--CONTENT************************************************************/
 .content-site {
-    display: grid;
-    font-size: 5vh;
-    align-items: center;
-    justify-items: center;
+  display: grid;
+  font-size: 5vh;
+  align-items: center;
+  justify-items: center;
+  align-content: start;
 }
 
 .content-site {
-    background-color: red;
+  background-color: white;
 }
+/*--/CONTENT************************************************************/
 
+/*--FOOTER************************************************************/
 .footer-site {
-    display: grid;
-    grid-template-columns: 33vw 33vw auto;
-    background-color: #061634;
-    color: #6479a2;
-    justify-items: center;
-    align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 33vw);
+  background-color: #061634;
+  color: #b0c4de;
+  justify-items: center;
+  align-items: start;
+  justify-content: center;
+  text-align: center;
 }
 
 .socialnetwork {
-    text-align: center;
+  font-size: 200%;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: 1fr;
+  justify-content: start;
 }
+
+.socialnetwork a:hover {
+  color: #ffe400;
+}
+
+.footer-site .button {
+  display: inline-block;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  border: 2px solid white;
+  width:45%;
+  height:100%;
+  border-bottom-left-radius: 80% 100%;
+  border-bottom-right-radius: 80% 100%;
+  border-top-left-radius: 80% 100%;
+  border-top-right-radius: 80% 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-site .button:hover {
+  background-color: #061634;
+  color: crimson;
+  border-width: 0px;
+  background-image: url("../img/decoration/batmanLogo.png");
+  background-blend-mode: color-dodge;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*--/FOOTER************************************************************/
+
