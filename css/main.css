@@ -5,6 +5,11 @@ html {
 .container {
   display: grid;
   grid-template-rows: 100vh 75vh 25vh;
+  box-sizing: border-box;
+}
+
+a {
+  transition: 0.3s ease-out;
 }
 
 /*HEADER**************************************************************/
